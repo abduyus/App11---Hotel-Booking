@@ -46,6 +46,6 @@ if hotel.available():
     hotel.book()
     name = input("Enter your name: ")
     reservation_ticket = ReservationTicket(customer_name=name, hotel_object=hotel)
-    reservation_ticket.generate()
+    print(reservation_ticket.generate())
 else:
     print("Hotel is not free.")
