@@ -57,7 +57,7 @@ hotel_ID = input("Enter the ID of the hotel: ")
 hotel = Hotel(hotel_ID)
 
 if hotel.available():
-    credit_card = CreditCard(number="1234567890123456")
+    credit_card = CreditCard(number="1234")
     if credit_card.validate(expiration="12/26", holder="JOHN SMITH", cvc="123"):
         hotel.book()
         name = input("Enter your name: ")
